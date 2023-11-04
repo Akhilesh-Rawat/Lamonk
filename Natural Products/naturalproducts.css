@@ -1,0 +1,474 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -------------------HEADER CODE START----------------- */
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.strip{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+@media(max-width:1051px){
+    .nav1 .search{
+        display: none;
+    }
+}
+
+@media(max-width:1051px){
+    .cart{
+        display: none;
+    }
+}
+
+@media(max-width:1051px){
+    .profile{
+        display: none;
+    }
+}
+.logo{
+    margin-right: 45%;
+}
+@media(max-width:1051px){
+    .nav1 .logo img{
+        width: 120px;
+      
+    }
+    .logo {
+        justify-content: center;
+        margin-right: 0%;
+    }
+
+}
+.search{
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 12px;
+    border-radius: 26px;
+    border: none;
+    background-color: #f8f9fa;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #f8f9fa;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 10rem;
+    font-size: 14px;
+    gap: 25px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+@media(max-width:1286px){
+    .nav2{
+        margin-left: 5rem;
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:1051px){
+    .nav2{
+        display: none;
+    }
+}
+.gifting{
+    line-height: 4.2rem;
+    border-bottom: 2px solid transparent;
+}
+.gifting:hover .hover_nav{
+    display: flex;
+}
+.gifting:hover{
+    border-bottom: 2px solid #28a745;
+}
+.gifting a{
+    text-decoration: none;
+    color: black;
+
+}
+.hover_nav{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 75rem;
+    border: 1px solid lightgrey;
+    
+    height: 19rem;
+    margin-top: 2px;
+    padding-top: 1.5rem;
+    line-height: 32px;
+    font-weight: 500;
+    display: none;
+}
+
+.hover_nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.hrline{
+    height: 1px;
+    background-color: lightgrey;
+    
+}
+
+/* ----------------------HEADER CODE END------------------- */
+
+/* ----------------------SECTION CODE START------------------------ */
+
+.section{
+    margin-top: 14rem;
+    
+}
+.home{
+    display: flex;
+    margin-left: 10rem;
+    
+    font-size: 14px;
+    gap: 0.5rem;
+    font-family: "Nunito", Helvetica, sans-serif;
+}
+.home a{
+    color: #666666;
+}
+.home a:hover{
+    color: #28a745;
+}
+.home p{
+    color: #999999;
+}
+
+.skin-benefits{
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+.skin-benefits1{
+    font-size: 1.3rem;
+    width: 65%;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    color: #222222;
+
+}
+.latest-update{
+    display: flex;
+    color: #999999;
+    margin-top: 1.5rem;
+}
+.latest-update p{
+    color: #999999;
+    font-size: 14px; 
+    font-weight: 500;
+    margin-left: .5rem;
+    text-transform: capitalize;
+}
+.latest-update p:hover{
+    color: #28a745;
+    cursor: pointer;
+}
+.latest-update img:hover{
+    color: #28a745;
+    cursor: pointer;
+}
+.latest-update .time{
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.img-details{
+    width: 100%;
+}
+.img-details img{
+    margin-top: 1.5rem;
+}
+.img-details p{
+    color: #222222;
+    font-size: 15px;
+    margin-top: 1rem;
+    word-spacing: .3rem;
+    line-height: 1.5rem;
+}
+.img-details p a{
+    color: #3598db;
+}
+.img-details .bold-heading{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #222222;
+    font-family: "Nunito", Helvetica, sans-serif;
+}
+.organic-essential-oil{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.organic-essential-oil a{
+    color: #999999;
+    font-size: 14px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    padding: 6px 12px;
+    margin-left: 0.5rem;
+}
+.organic-essential-oil1{
+    margin-top: .7rem;
+}
+.share-section{
+    display: flex;
+    margin-top: 2rem;
+}
+.share-section .facebook{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    margin-left: 1rem;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-family: "Nunito", Helvetica, sans-serif;
+    background-color: #3b5998;
+}
+.share-section a p{
+    margin-left: .7rem;
+}
+.twitter{
+    background-color: #55acee;
+    display: flex;
+    color: white;
+    font-size: 13px;
+    margin-left: 1rem;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-family: "Nunito", Helvetica, sans-serif;
+}
+.whatsapp{
+    background-color: #2cb742;
+    display: flex;
+    color: white;
+    font-size: 13px;
+    margin-left: 1rem;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-family: "Nunito", Helvetica, sans-serif;
+}
+.related-posts{
+    margin-top: 4rem;
+    font-size: 15px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    color: #222222;
+    margin-bottom: 25px;
+}
+.hrline1{
+    border-bottom: 3px solid black;
+    width: 6rem;
+}
+.skincare-img{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.skincare-img1 .natural-oil{
+    font-size: 15px;
+    color: #222222;
+    line-height: 1.5rem;
+    font-weight: 600;
+    word-spacing: 0.9rem;
+}
+.skincare-img1 .natural-oil:hover{
+    color: #28a745;
+    cursor: pointer;
+}
+.skincare-img1 .img3{
+    width: 95%;
+}
+.watchlogo{
+    display: flex;
+    
+}
+.watchlogo .months{
+    font-size: 12px;
+    margin-left: 0.5rem;
+    color: #999999;
+}
+.folder{
+    margin-left: 1rem;
+}
+.comments{
+    margin-top: 5rem;
+    width: 100%;
+}
+.comments p{
+    cursor: pointer;
+    color: #495057;
+    font-size: 14px;
+    font-family: "Nunito", Helvetica, sans-serif;
+    padding: 10px 0px;
+    width: 10%;
+    height: 3rem;
+    font-weight: 600;
+    border-bottom: 3.5px solid #495057 ;
+}
+.comments input{
+    margin-top: 2rem;
+
+    width: 49%;
+    background-color: #fff;
+    padding: 12px 20px;
+    border: 1px solid lightgrey;
+}
+
+.comments .email{
+    margin-left: 0.7rem;
+}
+.textarea{
+    margin-top: 1rem;
+    border: none;   
+}
+.textarea textarea{
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid lightgrey;
+}
+.comments button{
+    padding: 10px 15px;
+    background-color: #126b45;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Nunito", Helvetica, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    border-radius: 3px;
+}
+
+.latestpost{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 3.5rem;
+    width: 20%;
+}
+.latest-hrline{
+    border: 1px solid black;
+    width: 30%;
+    margin-top: 1rem;
+    
+}
+.img1{
+    margin-top: 2.5rem;
+}
+.img1 .skin{
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+}
+.img1 .skin:hover{
+    cursor: pointer;
+    color: #126b45;
+}
+.img1 .latest:hover{
+    color: #126b45;
+    cursor: pointer;
+}
+.months-ago{
+    display: flex;
+    font-size: 12px;
+    font-family: "Nunito", Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.months-ago .folder1{
+    margin-left: 1rem;
+}
+.months-ago p{
+    margin-left: 0.5rem;
+    color: #999999;
+}
+
+/* -----------------------FOOTER SECTION---------------- */
+
+.footer-elements{
+    margin-top: 6rem;
+    background-color: #f8f9fa;;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    font-family: "Nunito", Helvetica, sans-serif;
+    padding-top: 4rem;
+}
+.footer-elements ul li{
+    margin-bottom: 1.2rem;
+    color: #000000;
+}
+.footer-element1{
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.footer-element2{
+    margin-right: 10rem;
+}
+.footer-element3{  
+    margin-right: 5rem;
+}
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+.buttons input{
+    background-color: #fff;
+    width: 13rem;
+    height: 2rem;
+    border: 1px solid #888888;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.buttons button{
+    width: 6rem;
+    background-color: #126b45;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+}
+.buttons button:hover{
+    color: #126b45;
+    background-color: #fff;
+    border: 1px solid #126b45;
+    cursor: pointer;
+}
